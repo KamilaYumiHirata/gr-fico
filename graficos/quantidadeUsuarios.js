@@ -22,7 +22,7 @@ async function quantidadeUsuariosPorRede() {
         plot_bgcolor: getCSS('--bg-color'),
         paper_bgcolor: getCSS('--bg-color'),
         title: {
-            text: 'Redes sociais com mais usuários',
+            text: 'Social media with the most users',
             x: 0,
             font: {
                 color: getCSS('--primary-color'),
@@ -33,7 +33,7 @@ async function quantidadeUsuariosPorRede() {
         xaxis: {
             tickfont: tickConfig,
             title: {
-                text: 'Nome das redes',
+                text: 'Social media name',
                 font: {
                     color: getCSS('--secondary-color')
                 }
@@ -42,7 +42,7 @@ async function quantidadeUsuariosPorRede() {
         yaxis: {
             tickfont: tickConfig,
             title: {
-                text: 'Bilhões de usuários ativos',
+                text: 'Bilion active users',
                 font: {
                     color: getCSS('--secondary-color')
                 }
@@ -51,7 +51,7 @@ async function quantidadeUsuariosPorRede() {
     }
 
     const grafico = document.createElement('div')
-    grafico.className = 'grafico'
+    grafico.className = 'Graphic'
     document.getElementById('graficos-container').appendChild(grafico)
     Plotly.newPlot(grafico, data, laytout)
 }
